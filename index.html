@@ -11,18 +11,20 @@
   <button onclick="console.log(36)">Another Button</button>
 
   <input type="text">
+  <br>
 
   <!-- option 2 for click event handler -->
 
   <button onclick="makeYellow()">Make Yellow</button>
-  <button onclick="makeRed()">Make Red</button>
+  <button onclick="makeRed()">Make Red</button> 
+  <br>
+  <button id="btn-make-blue">Make Blue</button>
   <script>
-    function makeYellow(){
-      document.body.style.backgroundColor ='yellow';
-    }
-    function makeRed(){
-      document.body.style.backgroundColor ='Red';
-    }
+ const btnMakeBlue = document.getElementById('btn-make-blue');
+//  console.log(btnMakeBlue);
+btnMakeBlue.onclick = function makeblue(){
+  document.body.style.backgroundColor='blue';
+}
   </script>
 
   <script src="js/event.js"></script>
