@@ -22,6 +22,7 @@
   <!-- option 3: get element by id and then set onclick to a function -->
   <button id="btn-make-blue">Make Blue</button>
   <button id="btn-make-purple">Make Purple</button>
+  <button id="btn-make-gold">Make Gold</button>
 <br>
 
 <!-- option 4: addEventListener -->
@@ -29,7 +30,10 @@
   <script>
 // getElementbyId
 document.getElementById('btn-make-green').addEventListener('click', function makegreen(){
-  console.log(777)
+  document.body.style.backgroundColor='green'
+})
+document.getElementById('btn-make-gold').addEventListener('click', function (){
+  document.body.style.backgroundColor='gold'
 })
   </script>
 
