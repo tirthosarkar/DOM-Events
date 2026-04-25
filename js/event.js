@@ -6,6 +6,7 @@ function makeRed() {
   document.body.style.backgroundColor = 'Red';
 }
 
+ //option 3: get Element by Id and then set onclick
 const btnMakeBlue = document.getElementById('btn-make-blue');
 //  console.log(btnMakeBlue);
 btnMakeBlue.onclick = function makeblue() {
