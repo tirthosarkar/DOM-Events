@@ -7,7 +7,14 @@
 </head>
 <body>
   <h1>Event Handler</h1>
-  <button>Update title</button>
+  <button id="btn-update-title">Update title</button>
+
+  <script>
+    document.getElementById('btn-update-title')
+    .addEventListener('click', function(){
+      console.log('btn clicked');
+    })
+  </script>
   <script src="js/handler.js"></script>
 </body>
 </html>
