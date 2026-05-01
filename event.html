@@ -6,13 +6,15 @@
   <title>Even Handler</title>
 </head>
 <body>
-  <h1>Event Handler</h1>
+  <h1 id="page-title">Event Handler</h1>
   <button id="btn-update-title">Update title</button>
 
   <script>
     document.getElementById('btn-update-title')
     .addEventListener('click', function(){
-      console.log('btn clicked');
+      // console.log('btn clicked');
+const pageTitleElement = document.getElementById('page-title');
+console.log(pageTitleElement);
     })
   </script>
   <script src="js/handler.js"></script>
