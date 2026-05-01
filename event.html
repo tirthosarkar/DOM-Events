@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Even Handler</title>
-</head>
 <body>
   <h1 id="page-title">Event Handler</h1>
   <button id="btn-update-title">Update title</button>
+  <button id="btn-login">Login</button>
+  
+  <!-- Add this element so the script can find it -->
+  <div id="user-info"></div>
 
   <script>
-    
+    document.getElementById('btn-login').addEventListener('click', function(){
+      const userInfoEl = document.getElementById('user-info');
+      // Now userInfoEl will not be null
+      userInfoEl.innerText='user logged in successfully'
+    })
   </script>
   <script src="js/handler.js"></script>
 </body>
-</html>
