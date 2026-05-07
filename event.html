@@ -12,10 +12,13 @@
   <!-- handle input text  -->
    <p>No name</p>
    <input type="text" placeholder="Your Name">
-   <button>Update</button>
+   <button id="btn-update">Update</button>
 
   <script>
-  
+  //set event listener
+  document.getElementById('btn-update').addEventListener('click', function(){
+    console.log('update button clicked')
+  })
   </script>
   <script src="js/handler.js"></script>
 </body>
