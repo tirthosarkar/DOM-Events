@@ -6,3 +6,10 @@ document
     console.log(pageTitleElement);
     pageTitleElement.innerText = 'Updated page title text';
   });
+
+
+    document.getElementById('btn-login').addEventListener('click', function () {
+      const userInfoEl = document.getElementById('user-info');
+      // Now userInfoEl will not be null
+      userInfoEl.innerText = 'user logged in successfully';
+    });
