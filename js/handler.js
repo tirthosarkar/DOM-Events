@@ -1,3 +1,5 @@
+
+//  <!-- Add this element so the script can find it
 document
   .getElementById('btn-update-title')
   .addEventListener('click', function () {
