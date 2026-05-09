@@ -1,55 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document Box</title>
   <style>
-    .comment{
+    .comment {
       border: 2px solid blue;
       background-color: lightcyan;
     }
   </style>
 </head>
+
 <body>
-<h1>My Awesome Comment Box. Write in your mind!!</h1>
-<section>
-  <h3>All comment here</h3>
-  <div id="comment-container">
-    <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque libero dolores magnam! Non odio impedit harum at tempore veritatis consequatur. Placeat non fugit nesciunt molestias nulla perferendis, molestiae accusamus?</p>
-    <p class="comment">Accusamus, repudiandae. Quo quis ea amet tenetur in, necessitatibus tempora possimus asperiores illum quae aliquid iste cupiditate facere, quidem labore qui. Hic alias aut vitae neque? Iste dolor veritatis assumenda.</p>
-    <p class="comment">Ea, repellat consectetur soluta sit nostrum reiciendis eos eum laudantium quo vitae laborum rem animi velit non fuga! Sunt reprehenderit hic debitis natus, quas officia quae facilis consequatur? Impedit, laborum!</p>
-  </div>
+  <h1>My Awesome Comment Box. Write in your mind!!</h1>
+  <section>
+    <h3>All comment here</h3>
+    <div id="comment-container">
+      <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque libero dolores magnam! Non
+        odio impedit harum at tempore veritatis consequatur. Placeat non fugit nesciunt molestias nulla perferendis,
+        molestiae accusamus?</p>
+      <p class="comment">Accusamus, repudiandae. Quo quis ea amet tenetur in, necessitatibus tempora possimus asperiores
+        illum quae aliquid iste cupiditate facere, quidem labore qui. Hic alias aut vitae neque? Iste dolor veritatis
+        assumenda.</p>
+      <p class="comment">Ea, repellat consectetur soluta sit nostrum reiciendis eos eum laudantium quo vitae laborum rem
+        animi velit non fuga! Sunt reprehenderit hic debitis natus, quas officia quae facilis consequatur? Impedit,
+        laborum!</p>
+    </div>
 
-  <!-- <form action=""> -->
-   <textarea name="" id="comment-text-box" cols="60" rows="5"></textarea>
-   <br>
+    <!-- <form action=""> -->
+    <textarea name="" id="comment-text-box" cols="60" rows="5"></textarea>
+    <br>
     <button id="btn-post-comment">Post Comment</button>
-  <!-- </form> -->
-</section>
-<script>
-  //step--1: set an event handler to the button
-  document.getElementById('btn-post-comment').addEventListener('click', function() {
+    <!-- </form> -->
+  </section>
+  <script>
+    //step--1: set an event handler to the button
+    document.getElementById('btn-post-comment').addEventListener('click', function () {
 
-    // step-2: get the written in the comment text area
-    const commentTexBox =document.getElementById('comment-text-box');
-    // console.log('commentTexBox');
-    const newComment = commentTexBox.value;
-    
-    //step-3: get parent node where to publish comment
+      // step-2: get the written in the comment text area
+      const commentTexBox = document.getElementById('comment-text-box');
+      // console.log('commentTexBox');
+      const newComment = commentTexBox.value;
 
-    const commentContainer = document.getElementById('comment-container')
-    console.log('commentContainer')
+      //step-3: get parent node where to publish comment
 
-    // step-4: create a comment p and set the innerText
-    const commentElement = document.createElement('p');
-    commentElement.classList.add('comment');
-    commentElement.innerText = newComment;
+      const commentContainer = document.getElementById('comment-container')
+      console.log('commentContainer')
 
-//step-5: append the new p tag to the parent Node
-commentContainer.appendChild(commentElement)
+      // step-4: create a comment p and set the innerText
+      const commentElement = document.createElement('p');
+      commentElement.classList.add('comment');
+      commentElement.innerText = newComment;
 
-  })
-</script>
+      //step-5: append the new p tag to the parent Node
+      commentContainer.appendChild(commentElement)
+
+      //step-6: clean the text area
+      commentTexBox.value = '';
+    })
+  </script>
 </body>
+
 </html>
