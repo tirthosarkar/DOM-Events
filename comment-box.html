@@ -40,6 +40,15 @@
 
     const commentContainer = document.getElementById('comment-container')
     console.log('commentContainer')
+
+    // step-4: create a comment p and set the innerText
+    const commentElement = document.createElement('p');
+    commentElement.classList.add('comment');
+    commentElement.innerText = newComment;
+
+//step-5: append the new p tag to the parent Node
+commentContainer.appendChild(commentElement)
+
   })
 </script>
 </body>
