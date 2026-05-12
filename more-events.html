@@ -15,18 +15,22 @@
     //   console.log('event triggered')
     // })
 
-    document.getElementById('user-name').addEventListener('focus', function(){
-      console.log('user about to write name')
-    })
-    document.getElementById('user-email').addEventListener('focus', function(){
-      console.log('user about to write email')
-    })
-    document.getElementById('user-name').addEventListener('blur', function(){
-      console.log('user done with name')
-    })
-    document.getElementById('user-email').addEventListener('blur', function(){
-      console.log('user done with email')
-    })
+    // document.getElementById('user-name').addEventListener('focus', function(){
+    //   console.log('user about to write name')
+    // })
+    // document.getElementById('user-email').addEventListener('focus', function(){
+    //   console.log('user about to write email')
+    // })
+    // document.getElementById('user-name').addEventListener('blur', function(){
+    //   console.log('user done with name')
+    // })
+    // document.getElementById('user-email').addEventListener('blur', function(){
+    //   console.log('user done with email')
+    // })
+
+    document.getElementById('user-email').addEventListener('keydown', function(event){
+        console.log('typing', event)
+      })
   </script>
 </body>
 </html>
