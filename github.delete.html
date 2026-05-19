@@ -15,13 +15,13 @@
   <script>
     document.getElementById ('input-delete').addEventListener('keyup', function(event){
       const text = event.target.value;
-      // const btnDelete = event.target.value;
-      // const btnDelete = document.getElementById('btn-delete');
-      // console.log('user is typing', text);
+      const btnDelete = event.target.value;
+      const btnDelete = document.getElementById('btn-delete');
+      console.log('user is typing', text);
 
       if(text === 'delete'){
         console.log('delete typed')
-      //   btnDelete.removeAttribute('disabled');
+        btnDelete.removeAttribute('disabled');
       }
       else{
         console.log('someting elses')
